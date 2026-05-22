@@ -255,6 +255,11 @@ main {
   .contact-img { width: 120px; height: 120px; }
 }
 
+/* Hide any remaining old overlay markup on contact image */
+.social-icons {
+  display: none !important;
+}
+
 .eyebrow {
   margin: 0 0 0.5rem;
   text-transform: uppercase;
