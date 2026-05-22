@@ -362,23 +362,40 @@ main {
   color: var(--muted);
 }
 
+.contact-card p a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contact-card p a:hover {
+  text-decoration: underline;
+}
+
 .card-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 18px;
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
   display: grid;
   place-items: center;
-  background: var(--primary);
-  text-transform: uppercase;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid var(--border);
 }
 
 .card-icon img {
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
 }
 
 .contact-card--facebook .card-icon {
-  background: #1877f2;
+  background: rgba(24, 119, 242, 0.1);
+}
+
+.contact-card--email .card-icon {
+  background: rgba(220, 78, 65, 0.1);
+}
+
+.contact-card--linkedin .card-icon {
+  background: rgba(10, 102, 194, 0.1);
 }
 
 .contact-card--email .card-icon {
