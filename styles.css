@@ -215,6 +215,97 @@ main {
   padding-left: 1.25rem;
 }
 
+.page-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  padding: 0 0.25rem;
+}
+
+.contact-header {
+  padding-top: 0;
+}
+
+.page-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 24px;
+  display: grid;
+  place-items: center;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 800;
+  box-shadow: 0 18px 30px rgba(29, 78, 216, 0.15);
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  color: var(--primary-strong);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: var(--surface);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  border-radius: 24px;
+  padding: 2rem;
+  display: grid;
+  gap: 1.25rem;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.08);
+}
+
+.contact-card h2 {
+  margin: 0;
+}
+
+.contact-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #fff;
+  background: var(--primary);
+  text-transform: uppercase;
+}
+
+.contact-card--facebook .card-icon {
+  background: #1877f2;
+}
+
+.contact-card--email .card-icon {
+  background: #dc4e41;
+}
+
+.contact-card--linkedin .card-icon {
+  background: #0a66c2;
+}
+
+.contact-card .btn {
+  width: fit-content;
+}
+
 footer {
   text-align: center;
   padding: 1.5rem 1.25rem;
