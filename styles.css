@@ -263,29 +263,56 @@ main {
 .social-icons {
   position: absolute;
   left: 50%;
-  bottom: -10px;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   gap: 0.5rem;
-  background: rgba(255,255,255,0.9);
-  padding: 0.35rem;
+  background: rgba(255,255,255,0.95);
+  padding: 0.4rem 0.5rem;
   border-radius: 999px;
-  box-shadow: 0 8px 20px rgba(15,23,42,0.08);
+  box-shadow: 0 12px 30px rgba(15,23,42,0.12);
   border: 1px solid var(--border);
+  align-items: center;
 }
 
 .social-icon {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   display: inline-grid;
   place-items: center;
   border-radius: 999px;
   color: var(--text);
   text-decoration: none;
   background: transparent;
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.social-icon svg { display: block; }
+.social-icon:hover {
+  transform: translateY(-4px) scale(1.06);
+  box-shadow: 0 8px 20px rgba(15,23,42,0.12);
+}
+
+.social-icon svg { display: block; width: 20px; height: 20px; }
+
+.icon-label {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--surface);
+  color: var(--text);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  white-space: nowrap;
+  box-shadow: 0 8px 20px rgba(15,23,42,0.08);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.12s ease, transform 0.12s ease;
+}
+
+.social-icon:hover .icon-label { opacity: 1; transform: translateX(-50%) translateY(-6px); }
 
 .social-facebook { color: #1877f2; }
 .social-linkedin { color: #0a66c2; }
@@ -294,7 +321,9 @@ main {
 @media (max-width: 720px) {
   .contact-photo { width: 120px; height: 120px; }
   .contact-img { width: 120px; height: 120px; }
-  .social-icon { width: 36px; height: 36px; }
+  .social-icon { width: 40px; height: 40px; }
+  .social-icon svg { width: 18px; height: 18px; }
+  .icon-label { font-size: 0.7rem; }
 }
 
 .eyebrow {
