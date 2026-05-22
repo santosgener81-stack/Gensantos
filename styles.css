@@ -368,11 +368,13 @@ main {
   border-radius: 18px;
   display: grid;
   place-items: center;
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: #fff;
   background: var(--primary);
   text-transform: uppercase;
+}
+
+.card-icon img {
+  width: 28px;
+  height: 28px;
 }
 
 .contact-card--facebook .card-icon {
