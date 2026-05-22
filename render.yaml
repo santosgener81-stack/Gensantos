@@ -5,5 +5,4 @@ services:
     branch: main
     root: .
     publishPath: .
-    buildCommand: ""
     autoDeploy: true
