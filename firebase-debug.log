@@ -1,0 +1,100 @@
+[debug] [2026-05-22T00:37:10.603Z] ----------------------------------------------------------------------
+[debug] [2026-05-22T00:37:10.608Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\gener\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create gener-santos-portfolio-2026 --display-name Gener Santos Portfolio
+[debug] [2026-05-22T00:37:10.609Z] CLI Version:   15.18.0
+[debug] [2026-05-22T00:37:10.609Z] Platform:      win32
+[debug] [2026-05-22T00:37:10.609Z] Node Version:  v24.15.0
+[debug] [2026-05-22T00:37:10.609Z] Time:          Fri May 22 2026 08:37:10 GMT+0800 (Singapore Standard Time)
+[debug] [2026-05-22T00:37:10.609Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-22T00:37:11.171Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-22T00:37:11.171Z] > authorizing via signed-in user (santosgener81@gmail.com)
+[debug] [2026-05-22T00:37:11.178Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:11.179Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:11.181Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2026-05-22T00:37:11.181Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"gener-santos-portfolio-2026","name":"Gener Santos Portfolio"}
+[debug] [2026-05-22T00:37:12.519Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2026-05-22T00:37:12.520Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.5336538465757462773"}
+[debug] [2026-05-22T00:37:12.521Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:12.521Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:12.521Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5336538465757462773 [none]
+[debug] [2026-05-22T00:37:13.409Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5336538465757462773 200
+[debug] [2026-05-22T00:37:13.409Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5336538465757462773 {"name":"operations/create_project.global.5336538465757462773"}
+[debug] [2026-05-22T00:37:13.911Z] [Project Creation Poller] Retrying task index 0
+[debug] [2026-05-22T00:37:13.912Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:13.912Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:13.912Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5336538465757462773 [none]
+[debug] [2026-05-22T00:37:14.141Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5336538465757462773 200
+[debug] [2026-05-22T00:37:14.142Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5336538465757462773 {"name":"operations/create_project.global.5336538465757462773","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"601939326334","projectId":"gener-santos-portfolio-2026","lifecycleState":"ACTIVE","name":"Gener Santos Portfolio","createTime":"2026-05-22T00:37:12.234Z"}}
+[debug] [2026-05-22T00:37:14.143Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:14.143Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:14.143Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/gener-santos-portfolio-2026:addFirebase [none]
+[debug] [2026-05-22T00:37:15.927Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/gener-santos-portfolio-2026:addFirebase 403
+[debug] [2026-05-22T00:37:15.931Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/gener-santos-portfolio-2026:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2026-05-22T00:37:15.934Z] Request to https://firebase.googleapis.com/v1beta1/projects/gener-santos-portfolio-2026:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2026-05-22T00:37:16.022Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/gener-santos-portfolio-2026:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\gener\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:53:12)
+    at RetryOperation._fn (C:\Users\gener\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:333:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
+[debug] [2026-05-22T00:37:32.650Z] ----------------------------------------------------------------------
+[debug] [2026-05-22T00:37:32.660Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\gener\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create gener-santos-portfolio-2026 --display-name Gener Santos Portfolio --debug
+[debug] [2026-05-22T00:37:32.661Z] CLI Version:   15.18.0
+[debug] [2026-05-22T00:37:32.662Z] Platform:      win32
+[debug] [2026-05-22T00:37:32.662Z] Node Version:  v24.15.0
+[debug] [2026-05-22T00:37:32.662Z] Time:          Fri May 22 2026 08:37:32 GMT+0800 (Singapore Standard Time)
+[debug] [2026-05-22T00:37:32.662Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-22T00:37:33.013Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-22T00:37:33.014Z] > authorizing via signed-in user (santosgener81@gmail.com)
+[debug] [2026-05-22T00:37:33.019Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:33.019Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:33.027Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2026-05-22T00:37:33.029Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"gener-santos-portfolio-2026","name":"Gener Santos Portfolio"}
+[debug] [2026-05-22T00:37:34.226Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2026-05-22T00:37:34.226Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2026-05-22T00:37:34.730Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\gener\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:53:12)
+    at RetryOperation._fn (C:\Users\gener\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:333:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID gener-santos-portfolio-2026. Please try again with a unique project ID.
+[debug] [2026-05-22T00:37:47.334Z] ----------------------------------------------------------------------
+[debug] [2026-05-22T00:37:47.339Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\gener\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create gener-santos-portfolio-2026-1 --display-name Gener Santos Portfolio --debug
+[debug] [2026-05-22T00:37:47.340Z] CLI Version:   15.18.0
+[debug] [2026-05-22T00:37:47.340Z] Platform:      win32
+[debug] [2026-05-22T00:37:47.340Z] Node Version:  v24.15.0
+[debug] [2026-05-22T00:37:47.340Z] Time:          Fri May 22 2026 08:37:47 GMT+0800 (Singapore Standard Time)
+[debug] [2026-05-22T00:37:47.341Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-22T00:37:47.713Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-22T00:37:47.721Z] > authorizing via signed-in user (santosgener81@gmail.com)
+[debug] [2026-05-22T00:37:47.729Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:47.729Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:47.737Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2026-05-22T00:37:47.737Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"gener-santos-portfolio-2026-1","name":"Gener Santos Portfolio"}
+[debug] [2026-05-22T00:37:49.004Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2026-05-22T00:37:49.005Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.8341214854925436438"}
+[debug] [2026-05-22T00:37:49.007Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:49.007Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:49.008Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8341214854925436438 [none]
+[debug] [2026-05-22T00:37:49.874Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8341214854925436438 200
+[debug] [2026-05-22T00:37:49.874Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8341214854925436438 {"name":"operations/create_project.global.8341214854925436438"}
+[debug] [2026-05-22T00:37:50.387Z] [Project Creation Poller] Retrying task index 0
+[debug] [2026-05-22T00:37:50.389Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:50.389Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:50.390Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8341214854925436438 [none]
+[debug] [2026-05-22T00:37:50.641Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8341214854925436438 200
+[debug] [2026-05-22T00:37:50.642Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8341214854925436438 {"name":"operations/create_project.global.8341214854925436438","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"842165064976","projectId":"gener-santos-portfolio-2026-1","lifecycleState":"ACTIVE","name":"Gener Santos Portfolio","createTime":"2026-05-22T00:37:48.754Z"}}
+[debug] [2026-05-22T00:37:50.648Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:50.655Z] Checked if tokens are valid: true, expires at: 1779413491237
+[debug] [2026-05-22T00:37:50.656Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/gener-santos-portfolio-2026-1:addFirebase [none]
+[debug] [2026-05-22T00:37:52.234Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/gener-santos-portfolio-2026-1:addFirebase 403
+[debug] [2026-05-22T00:37:52.235Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/gener-santos-portfolio-2026-1:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2026-05-22T00:37:52.236Z] Request to https://firebase.googleapis.com/v1beta1/projects/gener-santos-portfolio-2026-1:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2026-05-22T00:37:52.320Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/gener-santos-portfolio-2026-1:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\gener\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:53:12)
+    at RetryOperation._fn (C:\Users\gener\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:333:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.

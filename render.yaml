@@ -1,0 +1,9 @@
+services:
+  - type: static_site
+    name: gener-portfolio
+    env: static
+    branch: main
+    root: .
+    publishPath: .
+    buildCommand: ""
+    autoDeploy: true
