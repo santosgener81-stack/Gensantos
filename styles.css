@@ -391,19 +391,11 @@ main {
 }
 
 .contact-card--email .card-icon {
-  background: rgba(220, 78, 65, 0.1);
+  background: rgba(220,78,65,0.1);
 }
 
 .contact-card--linkedin .card-icon {
   background: rgba(10, 102, 194, 0.1);
-}
-
-.contact-card--email .card-icon {
-  background: #dc4e41;
-}
-
-.contact-card--linkedin .card-icon {
-  background: #0a66c2;
 }
 
 .contact-card .btn {
