@@ -100,6 +100,12 @@ main {
   padding: 4rem 0;
 }
 
+.hero-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
 .profile-img {
   width: 180px;
   height: 180px;
@@ -127,8 +133,34 @@ main {
   line-height: 1.8;
 }
 
+.hero-summary {
+  max-width: 700px;
+  margin: 2rem auto 2.5rem;
+  text-align: left;
+  color: var(--muted);
+}
+
+.hero-summary h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.hero-summary p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.hero-list {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+  line-height: 1.8;
+}
+
+.hero-list li {
+  margin-bottom: 0.75rem;
+}
+
 .cta-buttons {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.75rem;
